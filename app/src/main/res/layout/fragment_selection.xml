@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_selection_title"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scegli il player"/>
+
+    <Button
+        android:id="@+id/selection_fragment_exoplayer_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ExoPlayer"
+        android:padding="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/selection_fragment_default_button"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/selection_fragment_default_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:text="Default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selection_fragment_exoplayer_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

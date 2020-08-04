@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/selectionFragment">
+
+    <fragment
+        android:id="@+id/selectionFragment"
+        android:name="com.overapp.videoplayerdemo.ui.fragments.SelectionFragment"
+        android:label="SelectionFragment" >
+        <action
+            android:id="@+id/action_selectionFragment_to_defaultPlayerFragment"
+            app:destination="@id/defaultPlayerFragment" />
+        <action
+            android:id="@+id/action_selectionFragment_to_exoplayerFragment"
+            app:destination="@id/exoplayerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/defaultPlayerFragment"
+        android:name="com.overapp.videoplayerdemo.ui.fragments.DefaultPlayerFragment"
+        android:label="DefaultPlayerFragment" />
+    <fragment
+        android:id="@+id/exoplayerFragment"
+        android:name="com.overapp.videoplayerdemo.ui.fragments.ExoplayerFragment"
+        android:label="ExoplayerFragment" />
+
+
+</navigation>

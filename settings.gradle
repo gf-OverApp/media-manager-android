@@ -1,0 +1,3 @@
+include ':MediaPlayerLib'
+include ':app'
+rootProject.name = "VideoPlayerDemo"
